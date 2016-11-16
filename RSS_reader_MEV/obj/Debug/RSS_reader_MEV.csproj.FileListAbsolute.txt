@@ -1,0 +1,9 @@
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\RSS_reader_MEV\bin\Debug\RSS_reader_MEV.exe.config
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\RSS_reader_MEV\bin\Debug\RSS_reader_MEV.exe
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\RSS_reader_MEV\bin\Debug\RSS_reader_MEV.pdb
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\RSS_reader_MEV\obj\Debug\RSS_reader_MEV.Form1.resources
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\RSS_reader_MEV\obj\Debug\RSS_reader_MEV.Properties.Resources.resources
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\RSS_reader_MEV\obj\Debug\RSS_reader_MEV.csproj.GenerateResource.Cache
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\RSS_reader_MEV\obj\Debug\RSS_reader_MEV.exe
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\RSS_reader_MEV\obj\Debug\RSS_reader_MEV.pdb
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\RSS_reader_MEV\obj\Debug\RSS_reader_MEV.csprojResolveAssemblyReference.cache
