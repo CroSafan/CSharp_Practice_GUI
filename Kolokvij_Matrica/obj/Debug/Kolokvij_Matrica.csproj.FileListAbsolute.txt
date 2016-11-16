@@ -1,0 +1,9 @@
+c:\users\antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\Kolokvij_Matrica\bin\Debug\Kolokvij_Matrica.exe.config
+c:\users\antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\Kolokvij_Matrica\bin\Debug\Kolokvij_Matrica.exe
+c:\users\antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\Kolokvij_Matrica\bin\Debug\Kolokvij_Matrica.pdb
+c:\users\antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\Kolokvij_Matrica\obj\Debug\Kolokvij_Matrica.Form1.resources
+c:\users\antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\Kolokvij_Matrica\obj\Debug\Kolokvij_Matrica.Properties.Resources.resources
+c:\users\antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\Kolokvij_Matrica\obj\Debug\Kolokvij_Matrica.csproj.GenerateResource.Cache
+c:\users\antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\Kolokvij_Matrica\obj\Debug\Kolokvij_Matrica.exe
+c:\users\antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\Kolokvij_Matrica\obj\Debug\Kolokvij_Matrica.pdb
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Kolokvij_Matrica\obj\Debug\Kolokvij_Matrica.csprojResolveAssemblyReference.cache

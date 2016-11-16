@@ -1,1 +1,8 @@
 c:\users\antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\CSharp_Practice_GUI\bin\Debug\CSharp_Practice_GUI.exe.config
+c:\users\antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\CSharp_Practice_GUI\bin\Debug\CSharp_Practice_GUI.exe
+c:\users\antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\CSharp_Practice_GUI\bin\Debug\CSharp_Practice_GUI.pdb
+c:\users\antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\CSharp_Practice_GUI\obj\Debug\CSharp_Practice_GUI.csprojResolveAssemblyReference.cache
+c:\users\antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\CSharp_Practice_GUI\obj\Debug\CSharp_Practice_GUI.Properties.Resources.resources
+c:\users\antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\CSharp_Practice_GUI\obj\Debug\CSharp_Practice_GUI.csproj.GenerateResource.Cache
+c:\users\antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\CSharp_Practice_GUI\obj\Debug\CSharp_Practice_GUI.exe
+c:\users\antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\CSharp_Practice_GUI\obj\Debug\CSharp_Practice_GUI.pdb
