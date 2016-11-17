@@ -1,0 +1,9 @@
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Regex_Query_Tool\bin\Debug\Regex_Query_Tool.exe.config
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Regex_Query_Tool\bin\Debug\Regex_Query_Tool.exe
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Regex_Query_Tool\bin\Debug\Regex_Query_Tool.pdb
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Regex_Query_Tool\obj\Debug\Regex_Query_Tool.csprojResolveAssemblyReference.cache
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Regex_Query_Tool\obj\Debug\Regex_Query_Tool.Form1.resources
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Regex_Query_Tool\obj\Debug\Regex_Query_Tool.Properties.Resources.resources
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Regex_Query_Tool\obj\Debug\Regex_Query_Tool.csproj.GenerateResource.Cache
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Regex_Query_Tool\obj\Debug\Regex_Query_Tool.exe
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Regex_Query_Tool\obj\Debug\Regex_Query_Tool.pdb
