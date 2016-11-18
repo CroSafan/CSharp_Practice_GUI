@@ -1,0 +1,9 @@
+C:\Users\Antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\Site_Checker\obj\Debug\Site_Checker.csprojResolveAssemblyReference.cache
+C:\Users\Antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\Site_Checker\obj\Debug\Site_Checker.Form1.resources
+C:\Users\Antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\Site_Checker\obj\Debug\Site_Checker.Properties.Resources.resources
+C:\Users\Antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\Site_Checker\obj\Debug\Site_Checker.csproj.GenerateResource.Cache
+C:\Users\Antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\Site_Checker\bin\Debug\Site_Checker.exe.config
+C:\Users\Antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\Site_Checker\bin\Debug\Site_Checker.exe
+C:\Users\Antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\Site_Checker\bin\Debug\Site_Checker.pdb
+C:\Users\Antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\Site_Checker\obj\Debug\Site_Checker.exe
+C:\Users\Antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\Site_Checker\obj\Debug\Site_Checker.pdb
