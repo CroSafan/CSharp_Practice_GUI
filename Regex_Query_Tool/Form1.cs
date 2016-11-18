@@ -29,6 +29,7 @@ namespace Regex_Query_Tool
 
         private void checkRegexButton_Click(object sender, EventArgs e)
         {
+            //regex for email = ^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$
             bool match = Regex.IsMatch(stringToCheckTextBox.Text, regExToCheckTextBox.Text);
             try
             {
