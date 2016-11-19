@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regex_Query_Tool", "Regex_Q
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Site_Checker", "Site_Checker\Site_Checker.csproj", "{6D4E4380-C91F-4CEF-84B5-A425F5572F55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Set_Desktop_Background", "Set_Desktop_Background\Set_Desktop_Background.csproj", "{9F6F83C2-8279-441C-B08B-80373D9F2E00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6D4E4380-C91F-4CEF-84B5-A425F5572F55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D4E4380-C91F-4CEF-84B5-A425F5572F55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D4E4380-C91F-4CEF-84B5-A425F5572F55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F6F83C2-8279-441C-B08B-80373D9F2E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F6F83C2-8279-441C-B08B-80373D9F2E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F6F83C2-8279-441C-B08B-80373D9F2E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F6F83C2-8279-441C-B08B-80373D9F2E00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
