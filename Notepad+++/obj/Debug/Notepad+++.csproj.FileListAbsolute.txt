@@ -1,0 +1,14 @@
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\bin\Debug\Notepad+++.exe.config
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\bin\Debug\Notepad+++.exe
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\bin\Debug\Notepad+++.pdb
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\Notepad+++.csprojResolveAssemblyReference.cache
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\MainWindow.g.cs
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\App.g.cs
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\Notepad+++_MarkupCompile.cache
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\Notepad+++_MarkupCompile.lref
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\MainWindow.baml
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\Notepad+++.g.resources
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\Notepad___.Properties.Resources.resources
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\Notepad+++.csproj.GenerateResource.Cache
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\Notepad+++.exe
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\Notepad+++.pdb
