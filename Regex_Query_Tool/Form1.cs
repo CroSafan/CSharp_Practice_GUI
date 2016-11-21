@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Regex_Query_Tool
@@ -15,11 +9,11 @@ namespace Regex_Query_Tool
     {
         /// <summary>
         /// Regex Query Tool -
-        /// A tool that allows the user to enter 
-        /// a text string and then in a separate 
-        /// control enter a regex pattern. 
-        /// It will run the regular expression against the 
-        /// source text and return any matches or flag errors 
+        /// A tool that allows the user to enter
+        /// a text string and then in a separate
+        /// control enter a regex pattern.
+        /// It will run the regular expression against the
+        /// source text and return any matches or flag errors
         /// in the regular expression.
         /// </summary>
         public Form1()
@@ -45,14 +39,11 @@ namespace Regex_Query_Tool
                     resultTextBox.BackColor = Color.Red;
                     resultTextBox.ForeColor = Color.White;
                 }
-
             }
             catch (NullReferenceException ex)
             {
                 MessageBox.Show(ex.Message);
-                
             }
-            
         }
     }
 }

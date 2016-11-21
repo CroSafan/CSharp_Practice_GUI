@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -15,6 +9,7 @@ namespace RSS_reader_MEV
     {
         public List<string> opisi = new List<string>();
         public List<string> linkovi = new List<string>();
+
         public Form1()
         {
             InitializeComponent();
@@ -28,11 +23,11 @@ namespace RSS_reader_MEV
             rssXmlDoc.Load("https://www.mev.hr/index.php/category/racunarstvo-rss/racunarstvo/feed/");
 
             // Parse the Items in the RSS file
-            XmlNodeList rssNodes = rssXmlDoc.SelectNodes("rss/channel/item");           
+            XmlNodeList rssNodes = rssXmlDoc.SelectNodes("rss/channel/item");
 
             // Iterate through the items in the RSS file
             foreach (XmlNode rssNode in rssNodes)
-            {                
+            {
                 XmlNode rssSubNode = rssNode.SelectSingleNode("title");
                 string title = rssSubNode != null ? rssSubNode.InnerText : "";
                 titlesComboBox.Items.Add(title);
@@ -40,10 +35,10 @@ namespace RSS_reader_MEV
                 rssSubNode = rssNode.SelectSingleNode("link");
                 string link = rssSubNode != null ? rssSubNode.InnerText : "";
                 linkovi.Add(link);
-               
+
                 rssSubNode = rssNode.SelectSingleNode("description");
                 string description = rssSubNode != null ? rssSubNode.InnerText : "";
-                opisi.Add(description);              
+                opisi.Add(description);
             }
         }
 
@@ -51,7 +46,6 @@ namespace RSS_reader_MEV
         {
             descriptionTextBox.Text = opisi[titlesComboBox.SelectedIndex];
             linkLabel.Text = linkovi[titlesComboBox.SelectedIndex];
-            
         }
 
         private void linkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

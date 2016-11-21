@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Kolokvij_Matrica
@@ -17,15 +11,13 @@ namespace Kolokvij_Matrica
 
         public Form1()
         {
-            
             InitializeComponent();
             Matrica();
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Matrica();           
+            Matrica();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -52,6 +44,7 @@ namespace Kolokvij_Matrica
                 MessageBox.Show(ex.Message);
             }
         }
+
         public void Matrica()
         {
             string line = "";
@@ -65,9 +58,9 @@ namespace Kolokvij_Matrica
                     {
                         while ((line = sr.ReadLine()) != null)
                         {
-                            spremiste += line;                           
+                            spremiste += line;
                         }
-                    }                   
+                    }
                     spremnik = spremiste.Split(';');
                     textBox1.Text = spremnik[0];
                     textBox2.Text = spremnik[1];
@@ -85,37 +78,39 @@ namespace Kolokvij_Matrica
                 MessageBox.Show(ex.Message);
             }
         }
+
         public void SumaMatrice()
         {
             int zbrojPrviStupac = Convert.ToInt32(textBox1.Text) + Convert.ToInt32(textBox4.Text) + Convert.ToInt32(textBox7.Text);
             int zbrojDrugiStupac = Convert.ToInt32(textBox2.Text) + Convert.ToInt32(textBox5.Text) + Convert.ToInt32(textBox8.Text);
             int zbrojTreciSupac = Convert.ToInt32(textBox3.Text) + Convert.ToInt32(textBox6.Text) + Convert.ToInt32(textBox9.Text);
-            
-                textBox10.Text = "Suma: \n\r";
-            textBox10.Text += zbrojPrviStupac.ToString() + ";" + zbrojDrugiStupac.ToString() + ";" + zbrojTreciSupac.ToString()+";";
+
+            textBox10.Text = "Suma: \n\r";
+            textBox10.Text += zbrojPrviStupac.ToString() + ";" + zbrojDrugiStupac.ToString() + ";" + zbrojTreciSupac.ToString() + ";";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
             {
-               textBox10.Text+= "Najmanji broj matrice: "+ MinimumMatrice();
-            }else if (radioButton2.Checked)
+                textBox10.Text += "Najmanji broj matrice: " + MinimumMatrice();
+            }
+            else if (radioButton2.Checked)
             {
-                textBox10.Text += "Najveci broj matrice: "+MaximumMatrice();
+                textBox10.Text += "Najveci broj matrice: " + MaximumMatrice();
             }
         }
 
         private string MaximumMatrice()
         {
-            return getAllNumbersSorted()[getAllNumbersSorted().Count()-1 ].ToString();
-
+            return getAllNumbersSorted()[getAllNumbersSorted().Count() - 1].ToString();
         }
 
         private string MinimumMatrice()
         {
             return getAllNumbersSorted()[0].ToString();
         }
+
         private int[] getAllNumbersSorted()
         {
             int[] mem = new int[9];
