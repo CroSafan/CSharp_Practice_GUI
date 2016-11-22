@@ -28,7 +28,7 @@
             <MenuItem Header="Help">
             </MenuItem>
         </Menu>
-        <RichTextBox Grid.Row="1" Name="mainTextBox" Block.LineHeight="1"  ></RichTextBox>
+        <RichTextBox Grid.Row="1" Name="mainTextBox" Block.LineHeight="1" VerticalScrollBarVisibility="Visible" ></RichTextBox>
         <Label Grid.Row="2" Name="wordsCount" Content="Number of words:" />
     </Grid>
 </Window>
