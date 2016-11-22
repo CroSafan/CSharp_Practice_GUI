@@ -40,7 +40,7 @@ namespace Site_Checker
             }
             catch (WebException wex)
             {
-                MessageBox.Show("Page not active");
+                MessageBox.Show("Page not active"+wex.Message);
                 //set flag if there was a timeout or some other issues
             }
         }
