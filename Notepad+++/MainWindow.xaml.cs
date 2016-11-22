@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.IO;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Documents;
 
@@ -65,6 +66,12 @@ namespace Notepad___
         private void MenuItem_Click_3(object sender, RoutedEventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void mainTextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            string inputText = new TextRange(mainTextBox.Document.ContentStart, mainTextBox.Document.ContentEnd).Text;
+            wordsCount.Content = "Number of words:"+ Regex.Matches(inputText, @"[A-Za-z0-9]+").Count.ToString();
         }
     }
 }
