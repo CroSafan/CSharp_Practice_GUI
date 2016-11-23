@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Notepad___"
         mc:Ignorable="d"
-        Title="Notepad+++" Height="350" Width="525">
+        Title="Notepad+++" Height="350" Width="525"
+        KeyUp="KeyCombinations"
+        >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="29*" />
@@ -14,12 +16,26 @@
         </Grid.RowDefinitions>
         <Menu Grid.Row="0">
             <MenuItem Header="File">
-                <MenuItem Header="New" Click="MenuItem_Click" />
-                <MenuItem Header="Open" Click="MenuItem_Click_1" />
-                <MenuItem Header="Save" Click="MenuItem_Click_2"/>
-                <MenuItem Header="Close" Click="MenuItem_Click_3" />
+                <MenuItem Header="New" Click="MenuItem_Click" InputGestureText="Ctrl+N" />
+                <MenuItem Header="Open" Click="MenuItem_Click_1 " InputGestureText="Ctrl+O" />
+                <MenuItem Header="Save" Click="MenuItem_Click_2" InputGestureText="Ctrl+S"/>
+                <Separator/>
+                <MenuItem Header="Close" Click="MenuItem_Click_3" InputGestureText="Alt+F4" />
             </MenuItem>
             <MenuItem Header="Edit">
+                <MenuItem Header="Undo" InputGestureText="Ctrl+Z" />
+                <MenuItem Header="Cut" InputGestureText="Ctrl+X" />
+                <MenuItem Header="Copy" InputGestureText="Ctrl+C"/>
+                <MenuItem Header="Paste" InputGestureText="Ctrl+V"/>
+                <MenuItem Header="Delete" InputGestureText="Del" />
+                <MenuItem Header="Find" InputGestureText="Ctrl+F"/>
+                <MenuItem Header="Find next" InputGestureText="F3" />
+                <MenuItem Header="Replace" InputGestureText="Ctrl+H" />
+                <MenuItem Header="Goto" InputGestureText="G" />
+                <MenuItem Header="Select all" InputGestureText="Ctrl+A" />
+                <MenuItem Header="Time/Date" Click="Time_Date_Click" />
+                
+                
             </MenuItem>
             <MenuItem Header="Format">
             </MenuItem>
