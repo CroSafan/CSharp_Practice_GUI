@@ -28,7 +28,7 @@
                 <MenuItem Header="Copy" InputGestureText="Ctrl+C"/>
                 <MenuItem Header="Paste" InputGestureText="Ctrl+V"/>
                 <MenuItem Header="Delete" InputGestureText="Del" />
-                <MenuItem Header="Find" InputGestureText="Ctrl+F"/>
+                <MenuItem Header="Find" InputGestureText="Ctrl+F" Click="findItem_Click"/>
                 <MenuItem Header="Find next" InputGestureText="F3" />
                 <MenuItem Header="Replace" InputGestureText="Ctrl+H" />
                 <MenuItem Header="Goto" InputGestureText="G" />

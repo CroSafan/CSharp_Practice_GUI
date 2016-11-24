@@ -26,19 +26,16 @@ namespace Notepad___
         {
             NewFile();
         }
-
         //open File
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
             OpenFile();
         }
-
         //save File
         private void MenuItem_Click_2(object sender, RoutedEventArgs e)
         {
             SafeFile();
         }
-
         //exit Program
         private void MenuItem_Click_3(object sender, RoutedEventArgs e)
         {
@@ -122,5 +119,41 @@ namespace Notepad___
                 Environment.Exit(0);
             }
         }
+        private void findItem_Click(object sender, RoutedEventArgs e)
+        {
+            
+            
+            searchWindow sw = new searchWindow();
+            sw.ShowDialog();
+            int wordCount = new TextRange(mainTextBox.Document.ContentStart, mainTextBox.Document.ContentEnd).Text.Length;
+            if (sw.getFindWord() != "")
+            {
+
+                int index = 0;
+                while (index != -1 && index < wordCount)
+                {
+                    
+                    index = new TextRange(mainTextBox.Document.ContentStart, mainTextBox.Document.ContentEnd).Text.IndexOf(sw.getFindWord(), index);
+                        
+                    if (index != -1)
+                    {
+                        TextPointer wordStart = mainTextBox.Document.ContentStart.GetPositionAtOffset(index);
+                        MessageBox.Show(index.ToString());
+                        TextPointer wordEnd = mainTextBox.Document.ContentStart.GetPositionAtOffset(index + sw.getFindWord().Length);
+                        MessageBox.Show((index + sw.getFindWord().Length).ToString());
+                        mainTextBox.Selection.Select(wordStart,wordEnd);
+                        mainTextBox.UpdateLayout();
+                        
+                        
+                        index++;
+                        //sw.ShowDialog();
+                    }
+                }
+            }
+
+
+
+        }
+
     }
 }

@@ -12,3 +12,5 @@ C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad
 C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\Notepad+++.csproj.GenerateResource.Cache
 C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\Notepad+++.exe
 C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\Notepad+++.pdb
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\searchWindow.g.cs
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\searchWindow.baml
