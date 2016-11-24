@@ -118,6 +118,27 @@ namespace Notepad___
             {
                 Environment.Exit(0);
             }
+            if ((Keyboard.Modifiers == ModifierKeys.Control) && (e.Key == Key.C))
+            {
+                mainTextBox.Copy();
+            }
+            if ((Keyboard.Modifiers == ModifierKeys.Control) && (e.Key == Key.V))
+            {
+                mainTextBox.Paste();
+            }
+            if ((Keyboard.Modifiers == ModifierKeys.Control) && (e.Key == Key.X))
+            {
+                mainTextBox.Cut();
+            }
+            if ((Keyboard.Modifiers == ModifierKeys.Control) && (e.Key == Key.A))
+            {
+                mainTextBox.SelectAll();
+            }
+            if ((Keyboard.Modifiers == ModifierKeys.Control) && (e.Key == Key.Z))
+            {
+                mainTextBox.Undo();
+            }
+            
         }
         private void findItem_Click(object sender, RoutedEventArgs e)
         {
