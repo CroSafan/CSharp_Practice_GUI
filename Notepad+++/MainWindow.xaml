@@ -38,6 +38,7 @@
                 
             </MenuItem>
             <MenuItem Header="Format">
+                <MenuItem Header="Font" Click="font_Click"/>
             </MenuItem>
             <MenuItem Header="View">
             </MenuItem>

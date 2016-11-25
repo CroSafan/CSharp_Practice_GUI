@@ -5,6 +5,7 @@ using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Forms;
 
 namespace Notepad___
 {
@@ -13,8 +14,8 @@ namespace Notepad___
     /// </summary>
     public partial class MainWindow : Window
     {
-        public static SaveFileDialog sfd = new SaveFileDialog();
-        public static OpenFileDialog ofd = new OpenFileDialog();
+        public static Microsoft.Win32.SaveFileDialog sfd = new Microsoft.Win32.SaveFileDialog();
+        public static Microsoft.Win32.OpenFileDialog ofd = new Microsoft.Win32.OpenFileDialog();
 
         public MainWindow()
         {
@@ -26,16 +27,19 @@ namespace Notepad___
         {
             NewFile();
         }
+
         //open File
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
             OpenFile();
         }
+
         //save File
         private void MenuItem_Click_2(object sender, RoutedEventArgs e)
         {
             SafeFile();
         }
+
         //exit Program
         private void MenuItem_Click_3(object sender, RoutedEventArgs e)
         {
@@ -48,7 +52,7 @@ namespace Notepad___
             wordsCount.Content = "Number of words:" + Regex.Matches(inputText, @"[A-Za-z0-9]+").Count.ToString();
         }
 
-        private void Time_Date_Click(object sender,RoutedEventArgs e)
+        private void Time_Date_Click(object sender, RoutedEventArgs e)
         {
             mainTextBox.Document.Blocks.Add(new Paragraph(new Run(DateTime.Now.ToString())));
         }
@@ -71,7 +75,7 @@ namespace Notepad___
         public void NewFile()
         {
             MessageBoxButton btn = MessageBoxButton.YesNo;
-            MessageBoxResult dr = MessageBox.Show("Do yo want to save the file?", "Notepad+++", btn);
+            MessageBoxResult dr = System.Windows.MessageBox.Show("Do yo want to save the file?", "Notepad+++", btn);
             if (dr == MessageBoxResult.Yes)
             {
                 SafeFile();
@@ -97,7 +101,7 @@ namespace Notepad___
             }
         }
 
-        private void KeyCombinations(object sender, KeyEventArgs e)
+        private void KeyCombinations(object sender, System.Windows.Input.KeyEventArgs e)
         {
             //performing operations from keyboard shortcuts
             if ((Keyboard.Modifiers == ModifierKeys.Control) && (e.Key == Key.S))
@@ -138,43 +142,42 @@ namespace Notepad___
             {
                 mainTextBox.Undo();
             }
-            
         }
+
         private void findItem_Click(object sender, RoutedEventArgs e)
         {
-            
-            
             searchWindow sw = new searchWindow();
             sw.ShowDialog();
             int wordCount = new TextRange(mainTextBox.Document.ContentStart, mainTextBox.Document.ContentEnd).Text.Length;
             if (sw.getFindWord() != "")
             {
-
                 int index = 0;
                 while (index != -1 && index < wordCount)
                 {
-                    
                     index = new TextRange(mainTextBox.Document.ContentStart, mainTextBox.Document.ContentEnd).Text.IndexOf(sw.getFindWord(), index);
-                        
+
                     if (index != -1)
                     {
                         TextPointer wordStart = mainTextBox.Document.ContentStart.GetPositionAtOffset(index);
-                        MessageBox.Show(index.ToString());
+                        System.Windows.MessageBox.Show(index.ToString());
                         TextPointer wordEnd = mainTextBox.Document.ContentStart.GetPositionAtOffset(index + sw.getFindWord().Length);
-                        MessageBox.Show((index + sw.getFindWord().Length).ToString());
-                        mainTextBox.Selection.Select(wordStart,wordEnd);
+                        System.Windows.MessageBox.Show((index + sw.getFindWord().Length).ToString());
+                        mainTextBox.Selection.Select(wordStart, wordEnd);
                         mainTextBox.UpdateLayout();
-                        
-                        
+
                         index++;
                         //sw.ShowDialog();
                     }
                 }
             }
-
-
-
         }
+
+        private void font_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Forms.FontDialog fd = new System.Windows.Forms.FontDialog();
+            fd.ShowDialog();
+        }
+
 
     }
 }
