@@ -148,6 +148,45 @@ namespace Notepad___
         {
             searchWindow sw = new searchWindow();
             sw.ShowDialog();
+
+            TextRange text = new TextRange(mainTextBox.Document.ContentStart, mainTextBox.Document.ContentEnd);
+            TextPointer current = text.Start.GetInsertionPosition(LogicalDirection.Forward);
+            while (current != null)
+            {
+                string textInRun = current.GetTextInRun(LogicalDirection.Forward);
+                if (!string.IsNullOrWhiteSpace(textInRun))
+                {
+                    int index = textInRun.IndexOf(sw.getFindWord());
+                    if (index != -1)
+                    {
+                        TextPointer selectionStart = current.GetPositionAtOffset(index, LogicalDirection.Forward);
+                        TextPointer selectionEnd = selectionStart.GetPositionAtOffset(sw.getFindWord().Length, LogicalDirection.Forward);
+                        TextRange selection = new TextRange(selectionStart, selectionEnd);
+                        //selection.Text = newString;
+                        //selection.ApplyPropertyValue(TextElement.FontWeightProperty, FontWeights.Bold);
+                        mainTextBox.Selection.Select(selection.Start, selection.End);
+                        mainTextBox.Focus();
+                    }
+                }
+                current = current.GetNextContextPosition(LogicalDirection.Forward);
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /*searchWindow sw = new searchWindow();
+            sw.ShowDialog();
             int wordCount = new TextRange(mainTextBox.Document.ContentStart, mainTextBox.Document.ContentEnd).Text.Length;
             if (sw.getFindWord() != "")
             {
@@ -169,7 +208,7 @@ namespace Notepad___
                         //sw.ShowDialog();
                     }
                 }
-            }
+            }*/
         }
 
         private void font_Click(object sender, RoutedEventArgs e)

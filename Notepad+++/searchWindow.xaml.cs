@@ -28,14 +28,14 @@ namespace Notepad___
         private void cancelBtn_Click(object sender, RoutedEventArgs e)
         {
             findWord = "";
-            this.Close();
+            
 
         }
 
         private void findNextBtn_Click(object sender, RoutedEventArgs e)
         {
             findWord = findTextTxtBox.Text;
-            this.Close();
+            this.DialogResult = false;
         }
 
         public String getFindWord()
