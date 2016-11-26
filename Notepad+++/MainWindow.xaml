@@ -30,7 +30,7 @@
                 <MenuItem Header="Delete" InputGestureText="Del" />
                 <MenuItem Header="Find" InputGestureText="Ctrl+F" Click="findItem_Click"/>
                 <MenuItem Header="Find next" InputGestureText="F3" />
-                <MenuItem Header="Replace" InputGestureText="Ctrl+H" />
+                <MenuItem Header="Replace" InputGestureText="Ctrl+H" Click="replace_Click"/>
                 <MenuItem Header="Goto" InputGestureText="G" />
                 <MenuItem Header="Select all" InputGestureText="Ctrl+A" />
                 <MenuItem Header="Time/Date" Click="Time_Date_Click" />

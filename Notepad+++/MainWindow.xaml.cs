@@ -162,53 +162,50 @@ namespace Notepad___
                         TextPointer selectionStart = current.GetPositionAtOffset(index, LogicalDirection.Forward);
                         TextPointer selectionEnd = selectionStart.GetPositionAtOffset(sw.getFindWord().Length, LogicalDirection.Forward);
                         TextRange selection = new TextRange(selectionStart, selectionEnd);
-                        //selection.Text = newString;
-                        //selection.ApplyPropertyValue(TextElement.FontWeightProperty, FontWeights.Bold);
+
                         mainTextBox.Selection.Select(selection.Start, selection.End);
                         mainTextBox.Focus();
                     }
                 }
                 current = current.GetNextContextPosition(LogicalDirection.Forward);
             }
+        }
 
+        private void replace_Click(object sender, RoutedEventArgs e)
+        {
+            FindAndReplace far = new FindAndReplace();
+            far.ShowDialog();
 
+            TextRange text = new TextRange(mainTextBox.Document.ContentStart, mainTextBox.Document.ContentEnd);
+            TextPointer current = text.Start.GetInsertionPosition(LogicalDirection.Forward);
 
-
-
-
-
-
-
-
-
-
-
-
-
-            /*searchWindow sw = new searchWindow();
-            sw.ShowDialog();
-            int wordCount = new TextRange(mainTextBox.Document.ContentStart, mainTextBox.Document.ContentEnd).Text.Length;
-            if (sw.getFindWord() != "")
+            if ((far.getReplaceString() == String.Empty) && (far.getFindString() == String.Empty))
             {
-                int index = 0;
-                while (index != -1 && index < wordCount)
+                MessageBox.Show("Enter a find and replace word");
+            }
+            else
+            {
+                while (current != null)
                 {
-                    index = new TextRange(mainTextBox.Document.ContentStart, mainTextBox.Document.ContentEnd).Text.IndexOf(sw.getFindWord(), index);
-
-                    if (index != -1)
+                    string textInRun = current.GetTextInRun(LogicalDirection.Forward);
+                    if (!string.IsNullOrWhiteSpace(textInRun))
                     {
-                        TextPointer wordStart = mainTextBox.Document.ContentStart.GetPositionAtOffset(index);
-                        MessageBox.Show(index.ToString());
-                        TextPointer wordEnd = mainTextBox.Document.ContentStart.GetPositionAtOffset(index + sw.getFindWord().Length);
-                        MessageBox.Show((index + sw.getFindWord().Length).ToString());
-                        mainTextBox.Selection.Select(wordStart, wordEnd);
-                        mainTextBox.UpdateLayout();
+                        int index = textInRun.IndexOf(far.getFindString());
+                        if (index != -1)
+                        {
+                            TextPointer selectionStart = current.GetPositionAtOffset(index, LogicalDirection.Forward);
+                            TextPointer selectionEnd = selectionStart.GetPositionAtOffset(far.getFindString().Length, LogicalDirection.Forward);
+                            TextRange selection = new TextRange(selectionStart, selectionEnd);
 
-                        index++;
-                        //sw.ShowDialog();
+                            selection.Text = far.getReplaceString();
+
+                            mainTextBox.Selection.Select(selection.Start, selection.End);
+                            mainTextBox.Focus();
+                        }
                     }
+                    current = current.GetNextContextPosition(LogicalDirection.Forward);
                 }
-            }*/
+            }
         }
 
         private void font_Click(object sender, RoutedEventArgs e)
@@ -226,7 +223,6 @@ namespace Notepad___
                     FontInfo.ApplyFont(mainTextBox, font);
                 }
             }
-
         }
     }
 }
