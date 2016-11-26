@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Forms;
+using WpfColorFontDialog;
 
 namespace Notepad___
 {
@@ -14,8 +14,8 @@ namespace Notepad___
     /// </summary>
     public partial class MainWindow : Window
     {
-        public static Microsoft.Win32.SaveFileDialog sfd = new Microsoft.Win32.SaveFileDialog();
-        public static Microsoft.Win32.OpenFileDialog ofd = new Microsoft.Win32.OpenFileDialog();
+        public static SaveFileDialog sfd = new SaveFileDialog();
+        public static OpenFileDialog ofd = new OpenFileDialog();
 
         public MainWindow()
         {
@@ -75,7 +75,7 @@ namespace Notepad___
         public void NewFile()
         {
             MessageBoxButton btn = MessageBoxButton.YesNo;
-            MessageBoxResult dr = System.Windows.MessageBox.Show("Do yo want to save the file?", "Notepad+++", btn);
+            MessageBoxResult dr = MessageBox.Show("Do yo want to save the file?", "Notepad+++", btn);
             if (dr == MessageBoxResult.Yes)
             {
                 SafeFile();
@@ -159,9 +159,9 @@ namespace Notepad___
                     if (index != -1)
                     {
                         TextPointer wordStart = mainTextBox.Document.ContentStart.GetPositionAtOffset(index);
-                        System.Windows.MessageBox.Show(index.ToString());
+                        MessageBox.Show(index.ToString());
                         TextPointer wordEnd = mainTextBox.Document.ContentStart.GetPositionAtOffset(index + sw.getFindWord().Length);
-                        System.Windows.MessageBox.Show((index + sw.getFindWord().Length).ToString());
+                        MessageBox.Show((index + sw.getFindWord().Length).ToString());
                         mainTextBox.Selection.Select(wordStart, wordEnd);
                         mainTextBox.UpdateLayout();
 
@@ -174,10 +174,20 @@ namespace Notepad___
 
         private void font_Click(object sender, RoutedEventArgs e)
         {
-            System.Windows.Forms.FontDialog fd = new System.Windows.Forms.FontDialog();
-            fd.ShowDialog();
+            //https://github.com/sskodje/WpfColorFont
+            bool previewFontInFontList = true;
+            ColorFontDialog dialog = new ColorFontDialog(previewFontInFontList);
+            dialog.Font = FontInfo.GetControlFont(mainTextBox);
+
+            if (dialog.ShowDialog() == true)
+            {
+                FontInfo font = dialog.Font;
+                if (font != null)
+                {
+                    FontInfo.ApplyFont(mainTextBox, font);
+                }
+            }
+
         }
-
-
     }
 }
