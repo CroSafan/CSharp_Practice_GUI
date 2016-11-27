@@ -122,26 +122,7 @@ namespace Notepad___
             {
                 Environment.Exit(0);
             }
-            if ((Keyboard.Modifiers == ModifierKeys.Control) && (e.Key == Key.C))
-            {
-                mainTextBox.Copy();
-            }
-            if ((Keyboard.Modifiers == ModifierKeys.Control) && (e.Key == Key.V))
-            {
-                mainTextBox.Paste();
-            }
-            if ((Keyboard.Modifiers == ModifierKeys.Control) && (e.Key == Key.X))
-            {
-                mainTextBox.Cut();
-            }
-            if ((Keyboard.Modifiers == ModifierKeys.Control) && (e.Key == Key.A))
-            {
-                mainTextBox.SelectAll();
-            }
-            if ((Keyboard.Modifiers == ModifierKeys.Control) && (e.Key == Key.Z))
-            {
-                mainTextBox.Undo();
-            }
+           
         }
 
         private void findItem_Click(object sender, RoutedEventArgs e)
@@ -237,6 +218,31 @@ namespace Notepad___
         private void About_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("This is a simple clone of notepad", "About", MessageBoxButton.OK);
+        }
+
+        private void MenuItem_Click_4(object sender, RoutedEventArgs e)
+        {
+            mainTextBox.Undo();
+        }
+
+        private void MenuItem_Click_5(object sender, RoutedEventArgs e)
+        {
+            mainTextBox.Cut();
+        }
+
+        private void MenuItem_Click_6(object sender, RoutedEventArgs e)
+        {
+            mainTextBox.Copy();
+        }
+
+        private void MenuItem_Click_7(object sender, RoutedEventArgs e)
+        {
+            mainTextBox.Paste();            
+        }
+
+        private void MenuItem_Click_8(object sender, RoutedEventArgs e)
+        {
+             mainTextBox.Selection.Text="";
         }
     }
 }

@@ -23,11 +23,11 @@
                 <MenuItem Header="Close" Click="MenuItem_Click_3" InputGestureText="Alt+F4" />
             </MenuItem>
             <MenuItem Header="Edit">
-                <MenuItem Header="Undo" InputGestureText="Ctrl+Z" />
-                <MenuItem Header="Cut" InputGestureText="Ctrl+X" />
-                <MenuItem Header="Copy" InputGestureText="Ctrl+C"/>
-                <MenuItem Header="Paste" InputGestureText="Ctrl+V"/>
-                <MenuItem Header="Delete" InputGestureText="Del" />
+                <MenuItem Header="Undo" InputGestureText="Ctrl+Z" Click="MenuItem_Click_4" />
+                <MenuItem Header="Cut" InputGestureText="Ctrl+X" Click="MenuItem_Click_5"/>
+                <MenuItem Header="Copy" InputGestureText="Ctrl+C" Click="MenuItem_Click_6"/>
+                <MenuItem Header="Paste" InputGestureText="Ctrl+V" Click="MenuItem_Click_7"/>
+                <MenuItem Header="Delete" InputGestureText="Del" Click="MenuItem_Click_8" />
                 <MenuItem Header="Find" InputGestureText="Ctrl+F" Click="findItem_Click"/>
                 <MenuItem Header="Find next" InputGestureText="F3" />
                 <MenuItem Header="Replace" InputGestureText="Ctrl+H" Click="replace_Click"/>
