@@ -233,5 +233,10 @@ namespace Notepad___
             }
             else wordsCount.Visibility = Visibility.Visible;
         }
+
+        private void About_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("This is a simple clone of notepad", "About", MessageBoxButton.OK);
+        }
     }
 }

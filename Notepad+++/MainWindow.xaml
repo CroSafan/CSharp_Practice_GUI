@@ -44,6 +44,7 @@
                 <MenuItem Name="statusBarMenuItem" Header="Status bar" IsCheckable="True" IsChecked="False" Click="statusBar_Click"/>
             </MenuItem>
             <MenuItem Header="Help">
+                <MenuItem Header="About" Click="About_Click"/>
             </MenuItem>
         </Menu>
         <RichTextBox Grid.Row="1" Name="mainTextBox" Block.LineHeight="1" VerticalScrollBarVisibility="Visible" TextChanged="mainTextBox_TextChanged" ></RichTextBox>
