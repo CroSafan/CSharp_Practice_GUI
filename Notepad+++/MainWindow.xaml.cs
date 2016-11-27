@@ -224,5 +224,14 @@ namespace Notepad___
                 }
             }
         }
+
+        private void statusBar_Click(object sender, RoutedEventArgs e)
+        {
+            if (!statusBarMenuItem.IsChecked)
+            {
+                wordsCount.Visibility = Visibility.Hidden;
+            }
+            else wordsCount.Visibility = Visibility.Visible;
+        }
     }
 }

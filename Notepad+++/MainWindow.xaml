@@ -41,11 +41,12 @@
                 <MenuItem Header="Font" Click="font_Click"/>
             </MenuItem>
             <MenuItem Header="View">
+                <MenuItem Name="statusBarMenuItem" Header="Status bar" IsCheckable="True" IsChecked="False" Click="statusBar_Click"/>
             </MenuItem>
             <MenuItem Header="Help">
             </MenuItem>
         </Menu>
         <RichTextBox Grid.Row="1" Name="mainTextBox" Block.LineHeight="1" VerticalScrollBarVisibility="Visible" TextChanged="mainTextBox_TextChanged" ></RichTextBox>
-        <Label Grid.Row="2" Name="wordsCount" Content="Number of words:" />
+        <Label Grid.Row="2" Name="wordsCount" Content="Number of words:" Visibility="Hidden" />
     </Grid>
 </Window>
