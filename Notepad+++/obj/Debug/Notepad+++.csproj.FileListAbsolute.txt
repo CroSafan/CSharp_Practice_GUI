@@ -17,3 +17,5 @@ C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad
 C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\bin\Debug\WpfColorFontDialog.dll
 C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\FindAndReplace.g.cs
 C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\FindAndReplace.baml
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\goToLine.g.cs
+C:\Users\Antun\Documents\Visual Studio 2015\Projects\CSharp_Practice_GUI\Notepad+++\obj\Debug\goToLine.baml

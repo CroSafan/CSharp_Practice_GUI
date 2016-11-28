@@ -122,7 +122,6 @@ namespace Notepad___
             {
                 Environment.Exit(0);
             }
-           
         }
 
         private void findItem_Click(object sender, RoutedEventArgs e)
@@ -237,12 +236,39 @@ namespace Notepad___
 
         private void MenuItem_Click_7(object sender, RoutedEventArgs e)
         {
-            mainTextBox.Paste();            
+            mainTextBox.Paste();
         }
 
         private void MenuItem_Click_8(object sender, RoutedEventArgs e)
         {
-             mainTextBox.Selection.Text="";
+            mainTextBox.Selection.Text = "";
+        }
+
+        private void gotoLine_Click(object sender, RoutedEventArgs e)
+        {
+            goToLine gotoLineDialog = new goToLine();
+            gotoLineDialog.ShowDialog();
+
+            int lineCounter = mainTextBox.Document.Blocks.Count;
+
+            if (gotoLineDialog.gotoLineNumber() > lineCounter)
+            {
+                MessageBox.Show("The line number is beyond the total number of lines");
+            }
+            else
+            {
+                int counter = 1;
+                //going through all the lines 
+                foreach (Paragraph x in mainTextBox.Document.Blocks)
+                {
+                    if (gotoLineDialog.gotoLineNumber() == counter)
+                    {
+                        //position the caret in the beginning of the line selected
+                        mainTextBox.Selection.Select(x.ElementStart, x.ElementStart);
+                    }
+                    counter++;
+                }
+            }
         }
     }
 }

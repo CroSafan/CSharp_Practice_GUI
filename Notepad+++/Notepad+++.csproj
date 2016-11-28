@@ -64,10 +64,17 @@
     <Compile Include="FindAndReplace.xaml.cs">
       <DependentUpon>FindAndReplace.xaml</DependentUpon>
     </Compile>
+    <Compile Include="goToLine.xaml.cs">
+      <DependentUpon>goToLine.xaml</DependentUpon>
+    </Compile>
     <Compile Include="searchWindow.xaml.cs">
       <DependentUpon>searchWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="FindAndReplace.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="goToLine.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
