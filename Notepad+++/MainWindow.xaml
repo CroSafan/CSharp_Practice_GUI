@@ -38,6 +38,7 @@
                 
             </MenuItem>
             <MenuItem Header="Format">
+                <MenuItem x:Name="wordWrapMenuItem" Header="WordWrap"  IsCheckable="True"/>
                 <MenuItem Header="Font" Click="font_Click"/>
             </MenuItem>
             <MenuItem Header="View">

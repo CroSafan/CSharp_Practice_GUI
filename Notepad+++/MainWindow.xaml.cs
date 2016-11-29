@@ -51,6 +51,19 @@ namespace Notepad___
             string inputText = new TextRange(mainTextBox.Document.ContentStart, mainTextBox.Document.ContentEnd).Text;
             string lineCount = mainTextBox.Document.Blocks.Count.ToString();
             wordsCount.Content = "Number of words:" + Regex.Matches(inputText, @"[A-Za-z0-9]+").Count.ToString() + " Number of lines: " + lineCount;
+            if (wordWrapMenuItem.IsChecked)
+            {
+                mainTextBox.HorizontalScrollBarVisibility = System.Windows.Controls.ScrollBarVisibility.Visible;
+                mainTextBox.Document.PageWidth = 1000;
+
+            }
+            else
+            {
+                mainTextBox.HorizontalScrollBarVisibility = System.Windows.Controls.ScrollBarVisibility.Hidden;
+                mainTextBox.Document.PageWidth = 600;
+            }
+
+
         }
 
         private void Time_Date_Click(object sender, RoutedEventArgs e)
