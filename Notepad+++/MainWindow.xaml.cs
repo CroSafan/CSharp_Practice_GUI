@@ -49,7 +49,8 @@ namespace Notepad___
         private void mainTextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
             string inputText = new TextRange(mainTextBox.Document.ContentStart, mainTextBox.Document.ContentEnd).Text;
-            wordsCount.Content = "Number of words:" + Regex.Matches(inputText, @"[A-Za-z0-9]+").Count.ToString();
+            string lineCount = mainTextBox.Document.Blocks.Count.ToString();
+            wordsCount.Content = "Number of words:" + Regex.Matches(inputText, @"[A-Za-z0-9]+").Count.ToString() + " Number of lines: " + lineCount;
         }
 
         private void Time_Date_Click(object sender, RoutedEventArgs e)
