@@ -3,17 +3,20 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:RapidFindReplace="clr-namespace:Keyoti.RapidFindReplace.WPF;assembly=Keyoti4.RapidFindReplace.WPF"
         xmlns:local="clr-namespace:Notepad___"
         mc:Ignorable="d"
         Title="Notepad+++" Height="350" Width="525"
         KeyUp="KeyCombinations"
         >
     <Grid>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="29*" />
             <RowDefinition Height="258*" />
             <RowDefinition Height="33*" />
         </Grid.RowDefinitions>
+        <RapidFindReplace:RapidFindReplacePopupControl/>
         <Menu Grid.Row="0">
             <MenuItem Header="File">
                 <MenuItem Header="New" Click="MenuItem_Click" InputGestureText="Ctrl+N" />
@@ -28,9 +31,8 @@
                 <MenuItem Header="Copy" InputGestureText="Ctrl+C" Click="MenuItem_Click_6"/>
                 <MenuItem Header="Paste" InputGestureText="Ctrl+V" Click="MenuItem_Click_7"/>
                 <MenuItem Header="Delete" InputGestureText="Del" Click="MenuItem_Click_8" />
-                <MenuItem Header="Find" InputGestureText="Ctrl+F" Click="findItem_Click"/>
-                <MenuItem Header="Find next" InputGestureText="F3" />
-                <MenuItem Header="Replace" InputGestureText="Ctrl+H" Click="replace_Click"/>
+                <!--https://www.codeproject.com/articles/889607/a-rich-find-and-replace-control-for-almost-all-wpf-->
+                <MenuItem Header="_Find..." Command="Find" InputGestureText="Ctrl+F" x:Name="test"/>               
                 <MenuItem Header="Goto" InputGestureText="G" Click="gotoLine_Click" />
                 <MenuItem Header="Select all" InputGestureText="Ctrl+A" />
                 <MenuItem Header="Time/Date" Click="Time_Date_Click" />
@@ -50,5 +52,6 @@
         </Menu>
         <RichTextBox Grid.Row="1" Name="mainTextBox" Block.LineHeight="1" VerticalScrollBarVisibility="Visible" TextChanged="mainTextBox_TextChanged" IsDocumentEnabled="True" ></RichTextBox>
         <Label Grid.Row="2" Name="wordsCount" Content="Number of words:" Visibility="Hidden" />
+       
     </Grid>
 </Window>

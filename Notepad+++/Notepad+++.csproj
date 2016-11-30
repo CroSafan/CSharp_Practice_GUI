@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Keyoti4.RapidFindReplace.WPF">
+      <HintPath>..\..\..\..\..\Desktop\Source\Keyoti.RapidFindReplaceControl\bin\Debug\Keyoti4.RapidFindReplace.WPF.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -61,19 +64,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="FindAndReplace.xaml.cs">
-      <DependentUpon>FindAndReplace.xaml</DependentUpon>
-    </Compile>
     <Compile Include="goToLine.xaml.cs">
       <DependentUpon>goToLine.xaml</DependentUpon>
     </Compile>
-    <Compile Include="searchWindow.xaml.cs">
-      <DependentUpon>searchWindow.xaml</DependentUpon>
-    </Compile>
-    <Page Include="FindAndReplace.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="goToLine.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -90,10 +83,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="searchWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

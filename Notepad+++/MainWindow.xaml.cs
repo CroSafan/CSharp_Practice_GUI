@@ -136,71 +136,13 @@ namespace Notepad___
             {
                 Environment.Exit(0);
             }
-        }
-
-        private void findItem_Click(object sender, RoutedEventArgs e)
-        {
-            searchWindow sw = new searchWindow();
-            sw.ShowDialog();
-
-            TextRange text = new TextRange(mainTextBox.Document.ContentStart, mainTextBox.Document.ContentEnd);
-            TextPointer current = text.Start.GetInsertionPosition(LogicalDirection.Forward);
-            while (current != null)
+            if ((Keyboard.Modifiers == ModifierKeys.Control) && (e.Key == Key.F))
             {
-                string textInRun = current.GetTextInRun(LogicalDirection.Forward);
-                if (!string.IsNullOrWhiteSpace(textInRun))
-                {
-                    int index = textInRun.IndexOf(sw.getFindWord());
-                    if (index != -1)
-                    {
-                        TextPointer selectionStart = current.GetPositionAtOffset(index, LogicalDirection.Forward);
-                        TextPointer selectionEnd = selectionStart.GetPositionAtOffset(sw.getFindWord().Length, LogicalDirection.Forward);
-                        TextRange selection = new TextRange(selectionStart, selectionEnd);
-
-                        mainTextBox.Selection.Select(selection.Start, selection.End);
-                        mainTextBox.Focus();
-                    }
-                }
-                current = current.GetNextContextPosition(LogicalDirection.Forward);
+                test.Command.Execute((string)"Find");
             }
         }
 
-        private void replace_Click(object sender, RoutedEventArgs e)
-        {
-            FindAndReplace far = new FindAndReplace();
-            far.ShowDialog();
 
-            TextRange text = new TextRange(mainTextBox.Document.ContentStart, mainTextBox.Document.ContentEnd);
-            TextPointer current = text.Start.GetInsertionPosition(LogicalDirection.Forward);
-
-            if ((far.getReplaceString() == String.Empty) && (far.getFindString() == String.Empty))
-            {
-                MessageBox.Show("Enter a find and replace word");
-            }
-            else
-            {
-                while (current != null)
-                {
-                    string textInRun = current.GetTextInRun(LogicalDirection.Forward);
-                    if (!string.IsNullOrWhiteSpace(textInRun))
-                    {
-                        int index = textInRun.IndexOf(far.getFindString());
-                        if (index != -1)
-                        {
-                            TextPointer selectionStart = current.GetPositionAtOffset(index, LogicalDirection.Forward);
-                            TextPointer selectionEnd = selectionStart.GetPositionAtOffset(far.getFindString().Length, LogicalDirection.Forward);
-                            TextRange selection = new TextRange(selectionStart, selectionEnd);
-
-                            selection.Text = far.getReplaceString();
-
-                            mainTextBox.Selection.Select(selection.Start, selection.End);
-                            mainTextBox.Focus();
-                        }
-                    }
-                    current = current.GetNextContextPosition(LogicalDirection.Forward);
-                }
-            }
-        }
 
         private void font_Click(object sender, RoutedEventArgs e)
         {
