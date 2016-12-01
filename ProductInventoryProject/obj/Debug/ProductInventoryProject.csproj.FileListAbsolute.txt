@@ -1,0 +1,9 @@
+C:\Users\Antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\ProductInventoryProject\bin\Debug\ProductInventoryProject.exe.config
+C:\Users\Antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\ProductInventoryProject\obj\Debug\ProductInventoryProject.csprojResolveAssemblyReference.cache
+C:\Users\Antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\ProductInventoryProject\obj\Debug\ProductInventoryProject.Form1.resources
+C:\Users\Antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\ProductInventoryProject\obj\Debug\ProductInventoryProject.Properties.Resources.resources
+C:\Users\Antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\ProductInventoryProject\obj\Debug\ProductInventoryProject.csproj.GenerateResource.Cache
+C:\Users\Antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\ProductInventoryProject\bin\Debug\ProductInventoryProject.exe
+C:\Users\Antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\ProductInventoryProject\bin\Debug\ProductInventoryProject.pdb
+C:\Users\Antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\ProductInventoryProject\obj\Debug\ProductInventoryProject.exe
+C:\Users\Antun\documents\visual studio 2015\Projects\CSharp_Practice_GUI\ProductInventoryProject\obj\Debug\ProductInventoryProject.pdb
