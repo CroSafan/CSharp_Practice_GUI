@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notepad+++", "Notepad+++\No
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductInventoryProject", "ProductInventoryProject\ProductInventoryProject.csproj", "{D7100643-D970-4DE7-97D8-F78DBA95952A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank_Account_Manager", "Bank_Account_Manager\Bank_Account_Manager.csproj", "{4A81ABC0-55CA-46FB-8F22-7452253ED864}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{D7100643-D970-4DE7-97D8-F78DBA95952A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7100643-D970-4DE7-97D8-F78DBA95952A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7100643-D970-4DE7-97D8-F78DBA95952A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A81ABC0-55CA-46FB-8F22-7452253ED864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A81ABC0-55CA-46FB-8F22-7452253ED864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A81ABC0-55CA-46FB-8F22-7452253ED864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A81ABC0-55CA-46FB-8F22-7452253ED864}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
